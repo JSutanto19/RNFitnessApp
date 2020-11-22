@@ -227,10 +227,10 @@ render() {
                     <TextInput style={styles.input} placeholder="Name" onChange={(event) => this.setState({name: event.nativeEvent.text})}  />
                     <Text style={{ textAlignVertical: "center", fontWeight: "700",marginTop:20 }} accessible={true} accessibilityLabel="Enter Calories burnt" >Calories Burnt</Text>
                     <TextInput style={styles.input} placeholder="Calories" onChange={(event) => this.setState({calories: event.nativeEvent.text})}/>
-                    <Text style={{ textAlignVertical: "center", fontWeight: "700", marginTop:20}} accessible={true} accessibilityLabel="Enter Calories burnt">Duration (Minutes)</Text>
+                    <Text style={{ textAlignVertical: "center", fontWeight: "700", marginTop:20}} accessible={true} accessibilityLabel="Enter Duration">Duration (Minutes)</Text>
                     <TextInput style={styles.input} placeholder="Duration" onChange={(event) => this.setState({duration: event.nativeEvent.text})}/>
 
-                    <View accessible={true} accessibilityLabel="Show time picker" accessibilityHint="Show date picker and select date">
+                    <View accessible={true} accessibilityLabel="Show date picker" accessibilityHint="Show date picker and select date">
                       <Button style={{marginTop: 20}}onPress={this.showDatepicker} title="Show date picker!" />
                     </View>
                     <View accessible={true}  accessibilityLabel="Show time picker" accessibilityHint="select a time">

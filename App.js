@@ -72,7 +72,7 @@ class App extends React.Component {
   SignoutButton = () => {
     return <>
       <View style={{ flexDirection: 'row', marginRight: 25 }}>
-        <Icon name="sign-out-alt" size={25} color="#900" style={{ marginRight: 20, paddingLeft:10 }} />
+        <Icon name="sign-out-alt" size={25} color="#900" style={{ marginRight: 20, paddingLeft:10 }} onPress={()=> this.setState({accessToken: undefined})}/>
       </View>
     </>
   }
