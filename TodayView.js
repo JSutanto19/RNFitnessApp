@@ -204,7 +204,7 @@ datesAreOnSameDay(first, second){
 
 
 render() {
-    return <ScrollView style={styles.mainContainer} contentContainerStyle={{ flexGrow: 11, justifyContent: 'center', alignItems: "center" }} accessible={true} accessibilityLabel="View Exercises and Goals">
+    return <ScrollView style={styles.mainContainer} contentContainerStyle={{ flexGrow: 11, justifyContent: 'center', alignItems: "center" }} >
               <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
                     <Icon name="running" size={40} color="#900" style={{ marginRight: 20 }} />
                     <Text style={styles.bigText}>Exercises</Text>
