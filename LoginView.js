@@ -68,7 +68,7 @@ class LoginView extends React.Component {
             placeholderTextColor="#992a20"
             onChangeText={(username) => this.setState({ username: username })}
             value={this.state.username}
-            autoCapitalize="none" accessibilityLabel="Your username is" accessibilityValue={this.state.username} />
+            autoCapitalize="none" accessibilityHint="Enter your username"/>
         </View>
         
         <TextInput style={styles.input}
@@ -78,8 +78,9 @@ class LoginView extends React.Component {
           placeholderTextColor="#992a20"
           onChangeText={(password) => this.setState({ password: password })}
           value={this.state.password}
-          autoCapitalize="none" accessibilityLabel="Your password is" accessibilityValue={this.state.password}/>
+          autoCapitalize="none" accessibilityHint="Enter your password"/>
         <View style={styles.space} />
+
         <View style={{ flexDirection: 'row', flexWrap: 'wrap' }} accessible={true}>
           <Button color="#942a21" style={styles.buttonInline} title="Login" onPress={this.handleLogin} accessibilityLabel="Login" />
           <View style={styles.spaceHorizontal} />

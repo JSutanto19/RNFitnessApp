@@ -71,8 +71,9 @@ class SignupView extends React.Component {
               placeholderTextColor="#992a20"
               onChangeText={(username) => this.setState({ username: username })}
               value={this.state.username}
-              autoCapitalize="none" accessibilityLabel="Your username is " accessibilityValue={{text: this.state.username}} />
+              autoCapitalize="none" accessibilityHint="Enter your username" />
         </View>
+
         <View accessible={true}>
           <TextInput style={styles.input}
               secureTextEntry={true}
@@ -80,7 +81,7 @@ class SignupView extends React.Component {
               onChangeText={(password) => this.setState({ password: password })}
               value={this.state.password}
               placeholderTextColor="#992a20"
-              autoCapitalize="none" accessibilityLabel="Your password is " accessibilityValue={{text: this.state.password}}/>
+              autoCapitalize="none" accessibilityHint="Enter your password"/>
         </View>
           
         <View style={styles.space} />
