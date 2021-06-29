@@ -1,1 +1,1 @@
-A fitness application built with React Native and accessibility features.
+A fitness application built with React Native and contains accessibility features.
